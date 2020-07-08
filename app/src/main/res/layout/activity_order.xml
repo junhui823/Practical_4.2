@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="14dp"
         android:text="@string/phone_label_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
@@ -94,9 +94,9 @@
     <EditText
         android:id="@+id/phone_text"
         android:layout_width="134dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
+        android:layout_height="45dp"
         android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:ems="10"
         android:hint="@string/enter_phone_hint"
         android:inputType="phone"
@@ -132,24 +132,22 @@
         android:id="@+id/delivery_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
         android:text="@string/choose_delivery_method"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/note_text"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/note_text" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/delivery_label">
+        app:layout_constraintTop_toBottomOf="@+id/delivery_label">
 
         <RadioButton
             android:id="@+id/sameday"
@@ -220,7 +218,7 @@
                 android:id="@+id/toastMessage"
                 android:layout_width="126dp"
                 android:layout_height="47dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:onClick="onShowToastButtonClicked"
                 android:text="@string/show_toast"
                 tools:ignore="OnClick" />
@@ -232,12 +230,13 @@
         android:id="@+id/label_spinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/phone_text"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
 
