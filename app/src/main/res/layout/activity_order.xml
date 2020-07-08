@@ -63,7 +63,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
-        android:text="@string/address_label"
+        android:text="@string/address_label_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name_label" />
 
@@ -87,7 +87,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="24dp"
-        android:text="@string/phone_label"
+        android:text="@string/phone_label_text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
 
@@ -144,8 +144,9 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/delivery_label">
@@ -173,6 +174,58 @@
             android:onClick="onRadioButtonClicked"
             android:text="@string/pick_up"
             tools:ignore="OnClick" />
+
+        <LinearLayout
+
+            android:id="@+id/checkBoxGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            tools:ignore="UnknownId">
+
+            <CheckBox
+                android:id="@+id/chocolateSyrup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chocolateSyrup" />
+
+            <CheckBox
+                android:id="@+id/sprinkles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sprinkles" />
+
+            <CheckBox
+                android:id="@+id/crushedNuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/crushedNuts" />
+
+            <CheckBox
+                android:id="@+id/cherries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cherries" />
+
+            <CheckBox
+                android:id="@+id/orioCookie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orioCookieCrumbles" />
+
+            <Button
+                android:id="@+id/toastMessage"
+                android:layout_width="126dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="24dp"
+                android:onClick="onShowToastButtonClicked"
+                android:text="@string/show_toast"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
     </RadioGroup>
 
     <Spinner
@@ -187,7 +240,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/phone_text"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
-
-
 
 </android.support.constraint.ConstraintLayout>
